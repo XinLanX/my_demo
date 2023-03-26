@@ -1,0 +1,9 @@
+# 应用名称
+spring:
+  application:
+    name: mydemo
+#xxl:
+#  file:
+#    downloadPath: @xxl.download.path@
+server:
+  port: 18081

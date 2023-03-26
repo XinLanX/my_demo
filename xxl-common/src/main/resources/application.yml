@@ -1,0 +1,10 @@
+# 应用名称
+spring:
+  application:
+    name: common
+
+#xxl:
+#  file:
+#    downloadPath: @xxl.download.path@
+server:
+  port: 18082

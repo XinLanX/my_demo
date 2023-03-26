@@ -1,0 +1,20 @@
+server:
+  port: 18083
+spring:
+  application:
+    name: myoracle
+  datasource:
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    url: jdbc:oracle:thin:@//172.20.238.5:33802/ORCL
+    username: dev_portal
+    password: Unif2022!
+
+mybatis-plus:
+  mapper-locations: classpath*:mapper/oracle/**/*.xml
+  type-aliases-package: com.xxl.myoracle.keysequence.domain
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    id-type: 1
+    # Sequence序列接口实现类配置
+    key-generator: com.baomidou.mybatisplus.extension.incrementer.OracleKeyGenerator

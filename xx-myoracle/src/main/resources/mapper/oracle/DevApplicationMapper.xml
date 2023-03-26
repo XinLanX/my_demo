@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xxl.myoracle.keysequence.mapper.DevApplicationMapper">
+    <resultMap type="com.xxl.myoracle.keysequence.domain.DevApplication" id="DevApplication">
+        <result property="createBy" column="create_by"/>
+        <result property="appCode" column="app_code"/>
+        <result property="appName" column="app_name"/>
+        <result property="appMembers" column="app_members"/>
+        <result property="id" column="id"/>
+        <result property="projectId" column="project_id"/>
+        <result property="appUrl" column="app_url"/>
+        <result property="isUc" column="is_uc"/>
+        <result property="status" column="status"/>
+        <result property="appComment" column="app_comment"/>
+        <result property="initStatus" column="init_status"/>
+        <result property="createTime" column="create_time"/>
+        <result property="gitTypeId" column="git_type_id"/>
+        <result property="gitType" column="git_type"/>
+    </resultMap>
+    <select id="selectDevApp" resultMap="DevApplication">
+         select create_by,
+               app_code,
+               app_name,
+               app_members,
+               attr_id,
+               id,
+               project_id,
+               app_url,
+               is_uc,
+               status,
+               app_comment,
+               init_status,
+               create_time
+        from dev_application
+    </select>
+</mapper>
