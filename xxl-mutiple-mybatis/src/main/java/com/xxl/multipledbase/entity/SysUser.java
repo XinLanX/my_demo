@@ -1,4 +1,4 @@
-package com.xxl.multipledb.entity;
+package com.xxl.multipledbase.entity;
 
 import lombok.Data;
 

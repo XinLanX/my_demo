@@ -2,10 +2,26 @@ server:
   port: 18082
 spring:
   datasource:
-    db1:
-      url: jdbc:mysql://172.20.238.5:33801/dev_uccenter?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai&useSSL=false
-      username: uccenter
-      password: Unif2022!
+    default:
+      url: jdbc:mysql://localhost:3306/dev_test?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai&useSSL=false
+      username: root
+      password: Xxl010113**
+      driver-class-name: com.mysql.cj.jdbc.Driver
+    db2:
+      url: jdbc:mysql://localhost:3306/dev_uccenter?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+      username: root
+      password: Xxl010113**
+      driver-class-name: com.mysql.cj.jdbc.Driver
+unif:
+  rdb:
+#    url: jdbc:mysql://localhost:3306/dev_test?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai&useSSL=false
+#    username: root
+#    password: Xxl010113**
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+    default:
+      url: jdbc:mysql://localhost:3306/dev_test?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai&useSSL=false
+      username: root
+      password: Xxl010113**
       driver-class-name: com.mysql.cj.jdbc.Driver
     db2:
       url: jdbc:mysql://localhost:3306/dev_uccenter?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
@@ -14,7 +30,7 @@ spring:
       driver-class-name: com.mysql.cj.jdbc.Driver
 
 
-mybatis-plus:
+mybatis:
   mapper-locations: classpath*:mapper/*.xml
   type-aliases-package: com.xxl.multipledb.entity
   configuration:

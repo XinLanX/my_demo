@@ -1,8 +1,9 @@
-package com.xxl.multipledb.service.impl;
+package com.xxl.multipledbase.service.impl;
 
-import com.xxl.multipledb.dao.SysUserDao;
-import com.xxl.multipledb.entity.SysUser;
-import com.xxl.multipledb.service.SysUserService;
+import com.xxl.multipledbase.dao.SysUserDao;
+import com.xxl.multipledbase.entity.SysUser;
+import com.xxl.multipledbase.handler.DataSource;
+import com.xxl.multipledbase.service.SysUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -19,6 +20,7 @@ public class SysUserServiceImpl implements SysUserService {
     }
 
     @Override
+    @DataSource("db2")
     public List<SysUser> sysUserList1(){
         return sysUserDao.sysUserList();
     }
