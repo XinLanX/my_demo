@@ -2,8 +2,39 @@
 spring:
   application:
     name: mydemo
+  datasource:
+    url: jdbc:mysql://localhost:3306/dev_test?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai&useSSL=false
+    username: root
+    password: Xxl010113**
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    default:
+      url: jdbc:mysql://localhost:3306/dev_test?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai&useSSL=false
+      username: root
+      password: Xxl010113**
+      driver-class-name: com.mysql.cj.jdbc.Driver
+    db2:
+      url: jdbc:mysql://localhost:3306/dev_uccenter?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+      username: root
+      password: Xxl010113**
+      driver-class-name: com.mysql.cj.jdbc.Driver
 #xxl:
 #  file:
 #    downloadPath: @xxl.download.path@
 server:
   port: 18081
+unif:
+  rdb:
+    #    url: jdbc:mysql://localhost:3306/dev_test?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai&useSSL=false
+    #    username: root
+    #    password: Xxl010113**
+    #    driver-class-name: com.mysql.cj.jdbc.Driver
+    default:
+      url: jdbc:mysql://localhost:3306/dev_test?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai&useSSL=false
+      username: root
+      password: Xxl010113**
+      driver-class-name: com.mysql.cj.jdbc.Driver
+    db2:
+      url: jdbc:mysql://localhost:3306/dev_uccenter?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+      username: root
+      password: Xxl010113**
+      driver-class-name: com.mysql.cj.jdbc.Driver
