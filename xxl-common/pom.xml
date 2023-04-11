@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.xxl</groupId>
-    <artifactId>common</artifactId>
+    <artifactId>xxl-common</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>war</packaging>
-    <name>common</name>
+    <name>xxl-common</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
