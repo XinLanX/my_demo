@@ -8,18 +8,31 @@ import org.yaml.snakeyaml.Yaml;
 import java.io.InputStream;
 import java.util.Map;
 
+/**
+ * @author Administrator
+ */
 @RestController
 @RequestMapping("hello")
 public class HelloWorldController {
 
-    @Value("${spring.datasource.default.url}")
-    private String myUrl;
+//    @Value("${spring.datasource.default.url}")
+//    private String myUrl;
 
     @RequestMapping("user")
     @ResponseBody
     public User myUser(@RequestBody User user, @RequestParam String sex){
         user.setSex(sex);
         return user;
+    }
+
+    @RequestMapping("users")
+    @ResponseBody
+    public User myUser1(){
+        User user1 = new User();
+        user1.setUserName("xinlan");
+        user1.setAge("18");
+        user1.setSex("man");
+        return user1;
     }
 
     @RequestMapping("yml")
