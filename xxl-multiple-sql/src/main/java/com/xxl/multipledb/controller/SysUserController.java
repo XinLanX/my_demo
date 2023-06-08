@@ -49,6 +49,16 @@ public class SysUserController {
 //        PageInfo<SysUser> pageInfo = new PageInfo<SysUser>(sysUsers);
         return sysUsers;
     }
+    @GetMapping("/user1")
+    @ResponseBody
+    public SysUser user1(){
+        String sql = "select user_id, login_name, email, user_name from sys_user where user_id = \"18\"";
+//        PageHelper.startPage(1,5);
+        List<SysUser> sysUsers = jdbcTemplateDb2.query(sql, new BeanPropertyRowMapper<>(SysUser.class));
+//        PageInfo<SysUser> pageInfo = new PageInfo<SysUser>(sysUsers);
+        SysUser sysUser = sysUsers.get(0);
+        return sysUser;
+    }
 
 //    @GetMapping("/list1")
 //    @ResponseBody
