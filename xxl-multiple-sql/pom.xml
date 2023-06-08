@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.xxl</groupId>
-    <artifactId>multiple-mybatis</artifactId>
+    <artifactId>xxl-multiple-sql</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>multiple-mybatis</name>
+    <name>xxl-multiple-sql</name>
     <description>Demo project for Spring Boot</description>
     <properties>
         <java.version>8</java.version>
