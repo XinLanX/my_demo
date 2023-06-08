@@ -7,4 +7,4 @@ spring:
 #  file:
 #    downloadPath: @xxl.download.path@
 server:
-  port: 18082
+  port: 18083
