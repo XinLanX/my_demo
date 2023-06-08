@@ -1,0 +1,16 @@
+# 应用名称
+spring:
+  application:
+    name: mydemo
+  datasource:
+    url: @env.datasource.url@
+    username: @env.datasource.username@
+    password: @env.datasource.password@
+    driver-class-name: @env.datasource.driver-class-name@
+#xxl:
+#  file:
+#    downloadPath: @xxl.download.path@
+server:
+  port: 18090
+  servlet:
+    context-path: @env.server.servlet.context-path@
